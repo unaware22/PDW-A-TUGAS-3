@@ -1,0 +1,363 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: #f9f9f9;
+    color: black;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container0 {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.container1, .container-footer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container1 h3 {
+    border-bottom: 2px solid salmon;
+}
+
+.content h2 {
+    text-align: left;
+    margin-left: 70px;
+}
+
+.profil {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.profil img {
+    height: 200px;
+    margin-left: 70px;
+}
+
+.profil p {
+    margin-right: 90px;
+    flex: 1;
+    text-align: justify;
+    margin-left: 30px;
+}
+
+.head1 {
+    display: flex;
+    align-items: center;
+    display: flex;
+    text-align: justify;
+    flex-direction: column; 
+    width: 100%;
+}
+
+.container1 img {
+    width: 80px;
+    height: auto;
+}
+nav {
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    margin-left: 10px;
+    
+}
+.head1 h2 {
+    margin: 0; 
+    font-size: 20px;
+}
+
+.head1 p {
+    
+    font-size: 12px;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 20px;
+    
+}
+
+
+nav ul {
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex;
+    gap: 0; 
+    width: 100%; 
+    
+}
+
+nav ul li {
+    display: inline-block; 
+    margin: 0; 
+    padding: 0; 
+    
+}
+
+.btn {
+    display: flex;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-left: 80%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btn input {
+    border: none;
+    font-size: 15px;
+    background-color: #f9f9f9;
+}
+
+
+nav ul li p a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    margin: 15px 20px;
+}
+
+nav ul li p a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    background-color: gold;
+    transition: 0.3s ease;
+    transform: scaleX(0);
+    border-radius: 10px;
+}
+
+nav ul li p a:hover::after {
+    transform: scaleX(1);
+}
+
+.hero {
+    background: url(image/sman8\ \(1\).jpeg) no-repeat center;
+    background-size: cover;
+    text-align: center;
+    height: 600px;
+    padding: 20px 0;
+}
+
+.hero h2 {
+    font-size: 28px;
+}
+
+.content {
+    padding: 20px 0;
+    background-color: #06407d;
+    color: white;
+    text-align: center;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(30% - 20px);
+    margin: 10px;
+    text-align: justify;
+    color: black;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* Perbaikan tampilan kalimat "CERDAS TANGGUH PEDULI" */
+.head1 p {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: -5px; /* Mengurangi margin untuk mengurangi jarak dengan logo */
+    margin-left: 10px;
+}
+
+/* Navbar */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li p a {
+    color: black;
+    text-decoration: none;
+    font-weight: 100;
+    display: flex;
+    position: relative;
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+nav ul li p a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    background-color: gold;
+    transition: 0.3s ease;
+    transform: scaleX(0);
+    border-radius: 10px;
+}
+
+nav ul li p a:hover::after {
+    transform: scaleX(1);
+}
+.contact {
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    header {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .btn {
+        margin-top: 10px;
+        align-items: center;
+        text-align: center;
+        margin-right: auto;
+        padding-bottom: 20px;
+        display: flex;
+        position: relative;
+        margin-left: 40%;
+       
+    }
+    .head1 {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: auto;
+    }
+
+    .head1 img {
+        width: 60px;
+    }
+    nav {
+        display: flex;
+    }
+    nav ul li{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 0; /* Menghapus padding default */
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .profil {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profil img {
+        margin: 0 auto;
+    }
+   
+  
+    .head1 p {
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        text-align: leftr; /* Memusatkan teks di layar kecil */
+        margin-left: 0; /* Menghapus margin kiri */
+    }
+
+    
+    nav ul li p a {
+        
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 0; /* Menghapus padding default */
+        margin: 5px 0; /* Menambah jarak antar menu */
+        padding: 10px;
+        width: 100%; /* Mengatur lebar penuh untuk klik yang lebih nyaman */
+        text-align: center; /* Pusatkan teks */
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .head1 img {
+        width: 50px;
+    }
+
+    .item {
+        flex: 1 1 100%;
+    }
+    nav ul {
+        gap: 5px; /* Mengurangi jarak antar elemen pada layar sangat kecil */
+    }
+
+    nav ul li p a {
+        margin-left: 10px;
+        padding: 4px; /* Mengurangi padding pada layar kecil */
+    }
+    .head1 {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .btn {
+        margin-left: 20%;
+    }
+}
